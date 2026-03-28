@@ -1,158 +1,154 @@
-﻿{
+{
   "floors": {
     "1": [
-     {
-  "id": "slime_1",
-  "name": "スライム",
-  "race": "slime",
-  "level": 1,
-  "stats": {
-    "hp": 30,
-    "atk": 8,
-    "def": 4,
-    "agi": 5,
-    "hit": 80,
-    "avoid": 5
-  },
-  "skills": [1, 2],
-  "actions": [
-    { "skill_id": 2, "weight": 40 },
-    { "type": "attack", "weight": 60 }
-  ],
-  "exp": 10,
-  "drops": [
-    { "part_id": "slime_gel", "rate": 50 },
-    { "part_id": "slime_body", "rate": 20 }
-  ]
-}
-,
       {
-  "id": "2",
-  "name": "巨大ネズミ",
-  "attribute": "獣",
-  "hp": 20,
-  "atk": 18,
-  "def": 3,
-  "agi": 12,
-  "hit": 95,
-  "avoid": 5,
-  "crit_rate": 3,
-  "crit_multi": 1.5,
-  "status_resist": 5,
-  "status_success": 0,
-  "skills": [],
-  "actions": [
-    { "type": "attack", "weight": 100 }
-  ],
-  "exp": 12,
-  "drops": [
-    { "part_id": "右足", "rate": 20 }
-  ]
-}
-
+        "id": "slime_1",
+        "name": "スライム",
+        "attribute": "slime",
+        "level": 1,
+        "stats": {
+          "hp": 30,
+          "atk": 8,
+          "def": 4,
+          "agi": 5,
+          "hit": 80,
+          "avoid": 5
+        },
+        "skills": [1, 2],
+        "actions": [
+          { "skill_id": 2, "weight": 40 },
+          { "type": "attack", "weight": 60 }
+        ],
+        "exp": 10,
+        "drops": [
+          { "part_id": "slime_gel", "rate": 50 },
+          { "part_id": "slime_body", "rate": 20 }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "巨大ネズミ",
+        "attribute": "beast",
+        "hp": 20,
+        "atk": 18,
+        "def": 3,
+        "agi": 12,
+        "hit": 95,
+        "avoid": 5,
+        "crit_rate": 3,
+        "crit_multi": 1.5,
+        "status_resist": 5,
+        "status_success": 0,
+        "skills": [],
+        "actions": [
+          { "type": "attack", "weight": 100 }
+        ],
+        "exp": 12,
+        "drops": [
+          { "part_id": "右足", "rate": 20 }
+        ]
+      }
     ],
     "2": [
       {
-  "id": "3",
-  "name": "洞窟コウモリ",
-  "attribute": "獣",
-  "hp": 30,
-  "atk": 15,
-  "def": 5,
-  "agi": 18,
-  "hit": 90,
-  "avoid": 8,
-  "crit_rate": 4,
-  "crit_multi": 1.5,
-  "status_resist": 10,
-  "status_success": 5,
-  "skills": ["blind_bite"],
-  "actions": [
-    { "type": "attack", "weight": 70 },
-    { "type": "skill", "id": "blind_bite", "weight": 30 }
-  ],
-  "exp": 18,
-  "drops": [
-    { "part_id": "頭", "rate": 25 }
-  ]
-},
+        "id": "3",
+        "name": "洞窟コウモリ",
+        "attribute": "beast",
+        "hp": 30,
+        "atk": 15,
+        "def": 5,
+        "agi": 18,
+        "hit": 90,
+        "avoid": 8,
+        "crit_rate": 4,
+        "crit_multi": 1.5,
+        "status_resist": 10,
+        "status_success": 5,
+        "skills": ["blind_bite"],
+        "actions": [
+          { "type": "attack", "weight": 70 },
+          { "type": "skill", "id": "blind_bite", "weight": 30 }
+        ],
+        "exp": 18,
+        "drops": [
+          { "part_id": "頭", "rate": 25 }
+        ]
+      },
       {
-  "id": "4",
-  "name": "ブルースライム",
-  "attribute": "スライム",
-  "hp": 40,
-  "atk": 12,
-  "def": 10,
-  "agi": 4,
-  "hit": 85,
-  "avoid": 2,
-  "crit_rate": 1,
-  "crit_multi": 1.5,
-  "status_resist": 20,
-  "status_success": 0,
-  "skills": ["slow_gel"],
-  "actions": [
-    { "type": "attack", "weight": 60 },
-    { "type": "skill", "id": "slow_gel", "weight": 40 }
-  ],
-  "exp": 20,
-  "drops": [
-    { "part_id": "胴体", "rate": 35 },
-    { "part_id": "左腕", "rate": 35 }
-  ]
-}
-
+        "id": "4",
+        "name": "ブルースライム",
+        "attribute": "slime",
+        "hp": 40,
+        "atk": 12,
+        "def": 10,
+        "agi": 4,
+        "hit": 85,
+        "avoid": 2,
+        "crit_rate": 1,
+        "crit_multi": 1.5,
+        "status_resist": 20,
+        "status_success": 0,
+        "skills": ["slow_gel"],
+        "actions": [
+          { "type": "attack", "weight": 60 },
+          { "type": "skill", "id": "slow_gel", "weight": 40 }
+        ],
+        "exp": 20,
+        "drops": [
+          { "part_id": "胴体", "rate": 35 },
+          { "part_id": "左腕", "rate": 35 }
+        ]
+      }
     ],
     "3": [
       {
-  "id": "skeleton_1",
-  "name": "スケルトン",
-  "race": "undead",
-  "level": 2,
-  "stats": {
-    "hp": 45,
-    "atk": 12,
-    "def": 8,
-    "agi": 7,
-    "hit": 85,
-    "avoid": 6
-  },
-  "skills": [3],
-  "actions": [
-    { "skill_id": 3, "weight": 70 },
-    { "type": "attack", "weight": 30 }
-  ],
-  "exp": 18,
-  "drops": [
-    { "part_id": "bone_arm", "rate": 40 },
-    { "part_id": "bone_leg", "rate": 25 }
-  ]
-},
-
+        "id": "skeleton_1",
+        "name": "スケルトン",
+        "attribute": "undead",
+        "level": 2,
+        "stats": {
+          "hp": 45,
+          "atk": 12,
+          "def": 8,
+          "agi": 7,
+          "hit": 85,
+          "avoid": 6
+        },
+        "skills": [3],
+        "actions": [
+          { "skill_id": 3, "weight": 70 },
+          { "type": "attack", "weight": 30 }
+        ],
+        "exp": 18,
+        "drops": [
+          { "part_id": "bone_arm", "rate": 40 },
+          { "part_id": "bone_leg", "rate": 25 }
+        ]
+      },
       {
-  "id": "wolf_1",
-  "name": "ウルフ",
-  "race": "beast",
-  "level": 3,
-  "stats": {
-    "hp": 55,
-    "atk": 15,
-    "def": 10,
-    "agi": 12,
-    "hit": 90,
-    "avoid": 10
-  },
-  "skills": [4],
-  "actions": [
-    { "skill_id": 4, "weight": 30 },
-    { "type": "attack", "weight": 70 }
-  ],
-  "exp": 25,
-  "drops": [
-    { "part_id": "wolf_fang", "rate": 40 },
-    { "part_id": "wolf_leg", "rate": 30 }
-  ]
-}
+        "id": "wolf_1",
+        "name": "ウルフ",
+        "attribute": "beast",
+        "level": 3,
+        "stats": {
+          "hp": 55,
+          "atk": 15,
+          "def": 10,
+          "agi": 12,
+          "hit": 90,
+          "avoid": 10
+        },
+        "skills": [4],
+        "actions": [
+          { "skill_id": 4, "weight": 30 },
+          { "type": "attack", "weight": 70 }
+        ],
+        "exp": 25,
+        "drops": [
+          { "part_id": "wolf_fang", "rate": 40 },
+          { "part_id": "wolf_leg", "rate": 30 }
+        ]
+      }
     ]
   }
 }
