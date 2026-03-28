@@ -1,0 +1,62 @@
+﻿{
+  "skills": [
+    {
+      "id": "1",
+      "name": "目潰し噛みつき",
+      "type": "physical",
+      "power": 1.0,
+      "mp_cost": 0,
+      "target": "single",
+      "status_effect": {
+        "id": 1,
+        "success_rate": 30,
+        "duration": 1,
+        "continue_rate": 40
+      },
+      "cooldown": 0,
+      "description": "物理攻撃＋一定確率で暗闇を付与する"
+    },
+    {
+      "id": "2",
+      "name": "スロウジェル",
+      "type": "magic",
+      "power": 0.8,
+      "mp_cost": 0,
+      "target": "single",
+      "status_effect": {
+        "id": 2,
+        "success_rate": 40,
+        "duration": 1,
+        "continue_rate": 50
+      },
+      "cooldown": 0,
+      "description": "粘液で対象の敏捷を下げる"
+    },
+    {
+      "id": "3",
+      "name": "ボーンスロー",
+      "type": "physical",
+      "power": 1.2,
+      "mp_cost": 0,
+      "target": "single",
+      "status_effect": null,
+      "cooldown": 0,
+      "description": "骨を投げつける単体物理攻撃"
+    },
+    {
+      "id": "4",
+      "name": "咆哮",
+      "type": "buff",
+      "power": 0,
+      "mp_cost": 0,
+      "target": "self",
+      "buff_effect": {
+        "atk_up": 20,
+        "duration": 1,
+        "continue_rate": 40
+      },
+      "cooldown": 3,
+      "description": "自身の攻撃力を上昇させる"
+    }
+  ]
+}

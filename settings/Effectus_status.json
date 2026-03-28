@@ -1,0 +1,60 @@
+﻿{
+  "status_effects": [
+    {
+      "id": "1",
+      "name": "暗闇",
+      "type": "debuff",
+      "duration": 1,
+      "continue_rate": 20,
+      "effects": {
+        "hit_down": 30
+      },
+      "description": "命中率が低下する"
+    },
+    {
+      "id": "2",
+      "name": "鈍化",
+      "type": "debuff",
+      "duration": 1,
+      "continue_rate": 25,
+      "effects": {
+        "agi_down": 20
+      },
+      "description": "敏捷が低下し、行動順が遅くなる"
+    },
+    {
+      "id": "3",
+      "name": "毒",
+      "type": "dot",
+      "duration": 1,
+      "continue_rate": 40,
+      "effects": {
+        "hp_damage_percent": 5
+      },
+      "description": "毎ターン最大HPの一定割合のダメージを受ける"
+    },
+    {
+      "id": "4",
+      "name": "スタン",
+      "type": "control",
+      "duration": 1,
+      "continue_rate": 0,
+      "effects": {
+        "skip_turn": true
+      },
+      "description": "行動不能になる"
+    },
+    {
+      "id": "5",
+      "name": "呪い",
+      "type": "debuff",
+      "duration": 1,
+      "continue_rate": 15,
+      "effects": {
+        "atk_down": 10,
+        "def_down": 10
+      },
+      "description": "攻撃力と防御力が低下する"
+    }
+  ]
+}
