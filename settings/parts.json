@@ -1,179 +1,310 @@
 ﻿{
   "part_pools": {
-    "獣": {
-      "right_leg": {
-        "main_stat": "agi",
-        "tiers": {
-          "common": { "min": 10, "max": 15, "rate": 95 },
-          "uncommon": { "min": 20, "max": 22, "rate": 4 },
-          "rare": { "min": 30, "max": 32, "rate": 1, "rare_skill": "double_attack" }
-        },
-        "secondary": {
-          "none": { "rate": 80 },
-          "small": {
-            "rate": 18,
-            "stats": [
-              { "stat": "def", "min": 3, "max": 5 },
-              { "stat": "hp", "min": 10, "max": 20 }
-            ]
-          },
-          "medium": {
-            "rate": 2,
-            "stats": [
-              { "stat": "def", "min": 8, "max": 10 },
-              { "stat": "hp", "min": 25, "max": 30 }
-            ]
-          }
-        }
-      },
-      "right_arm": {
-        "main_stat": "atk",
-        "tiers": {
-          "common": { "min": 5, "max": 10, "rate": 95 },
-          "uncommon": { "min": 12, "max": 15, "rate": 4 },
-          "rare": { "min": 18, "max": 20, "rate": 1, "rare_skill": "bleed_bite" }
-        },
-        "secondary": {
-          "none": { "rate": 80 },
-          "small": {
-            "rate": 18,
-            "stats": [
-              { "stat": "agi", "min": 2, "max": 4 },
-              { "stat": "crit_rate", "min": 1, "max": 2 }
-            ]
-          },
-          "medium": {
-            "rate": 2,
-            "stats": [
-              { "stat": "agi", "min": 5, "max": 7 },
-              { "stat": "crit_rate", "min": 3, "max": 4 }
-            ]
-          }
-        }
-      },
+    "人間": {
       "head": {
-        "main_stat": "status_success",
+        "main_stat_candidates": ["mp", "status_success", "status_resist"],
         "tiers": {
-          "common": { "min": 5, "max": 10, "rate": 95 },
+          "common":   { "min": 5,  "max": 10, "rate": 95 },
           "uncommon": { "min": 12, "max": 15, "rate": 4 },
-          "rare": { "min": 18, "max": 20, "rate": 1, "rare_skill": "roar" }
+          "rare":     { "min": 18, "max": 20, "rate": 1 }
         },
         "secondary": {
           "none": { "rate": 80 },
-          "small": {
-            "rate": 18,
-            "stats": [
-              { "stat": "mp", "min": 5, "max": 10 }
-            ]
-          },
-          "medium": {
-            "rate": 2,
-            "stats": [
-              { "stat": "mp", "min": 12, "max": 15 }
-            ]
-          }
+          "small":  { "rate": 18, "stats": [
+            { "stat": "hp", "min": 10, "max": 20 },
+            { "stat": "def", "min": 3, "max": 5 },
+            { "stat": "atk", "min": 3, "max": 5 },
+            { "stat": "magic_skill", "min": 3, "max": 5 },
+            { "stat": "physical_skill", "min": 3, "max": 5 }
+          ]},
+          "medium": { "rate": 2, "stats": [
+            { "stat": "hp", "min": 25, "max": 35 },
+            { "stat": "def", "min": 8, "max": 10 },
+            { "stat": "atk", "min": 8, "max": 10 },
+            { "stat": "magic_skill", "min": 8, "max": 10 },
+            { "stat": "physical_skill", "min": 8, "max": 10 }
+          ]}
         }
+      },
+
+      "right_arm": {
+        "main_stat_candidates": ["atk", "physical_skill", "hit", "crit"],
+        "tiers": {
+          "common":   { "min": 5,  "max": 10, "rate": 95 },
+          "uncommon": { "min": 12, "max": 15, "rate": 4 },
+          "rare":     { "min": 18, "max": 20, "rate": 1 }
+        },
+        "secondary": { "$ref": "#/common_secondary/人間" }
+      },
+
+      "left_arm": {
+        "main_stat_candidates": ["magic_skill", "mp"],
+        "tiers": {
+          "common":   { "min": 5,  "max": 10, "rate": 95 },
+          "uncommon": { "min": 12, "max": 15, "rate": 4 },
+          "rare":     { "min": 18, "max": 20, "rate": 1 }
+        },
+        "secondary": { "$ref": "#/common_secondary/人間" }
+      },
+
+      "body": {
+        "main_stat_candidates": ["hp", "def"],
+        "tiers": {
+          "common":   { "min": 20, "max": 30, "rate": 95 },
+          "uncommon": { "min": 35, "max": 40, "rate": 4 },
+          "rare":     { "min": 50, "max": 55, "rate": 1 }
+        },
+        "secondary": { "$ref": "#/common_secondary/人間" }
+      },
+
+      "right_leg": {
+        "main_stat_candidates": ["agi", "eva"],
+        "tiers": {
+          "common":   { "min": 5,  "max": 10, "rate": 95 },
+          "uncommon": { "min": 12, "max": 15, "rate": 4 },
+          "rare":     { "min": 18, "max": 20, "rate": 1 }
+        },
+        "secondary": { "$ref": "#/common_secondary/人間" }
+      },
+
+      "left_leg": {
+        "main_stat_candidates": ["agi", "eva"],
+        "tiers": {
+          "common":   { "min": 5,  "max": 10, "rate": 95 },
+          "uncommon": { "min": 12, "max": 15, "rate": 4 },
+          "rare":     { "min": 18, "max": 20, "rate": 1 }
+        },
+        "secondary": { "$ref": "#/common_secondary/人間" }
       }
     },
 
-    "スライム": {
-      "core": {
-        "main_stat": "hp",
-        "tiers": {
-          "common": { "min": 20, "max": 30, "rate": 95 },
-          "uncommon": { "min": 35, "max": 40, "rate": 4 },
-          "rare": { "min": 50, "max": 55, "rate": 1, "rare_skill": "hp_regen" }
-        },
-        "secondary": {
-          "none": { "rate": 80 },
-          "small": {
-            "rate": 18,
-            "stats": [
-              { "stat": "status_resist", "min": 5, "max": 10 },
-              { "stat": "def", "min": 3, "max": 5 }
-            ]
-          },
-          "medium": {
-            "rate": 2,
-            "stats": [
-              { "stat": "status_resist", "min": 12, "max": 15 },
-              { "stat": "def", "min": 8, "max": 10 }
-            ]
-          }
-        }
+    "獣": {
+      "$ref_species": "人間",
+      "$adjust": {
+        "right_leg": { "common_min": 10, "common_max": 15, "rare_min": 30, "rare_max": 32 },
+        "left_leg":  { "common_min": 10, "common_max": 15, "rare_min": 30, "rare_max": 32 },
+        "mp": { "down": true }
       },
-      "membrane": {
-        "main_stat": "def",
-        "tiers": {
-          "common": { "min": 3, "max": 6, "rate": 95 },
-          "uncommon": { "min": 8, "max": 10, "rate": 4 },
-          "rare": { "min": 12, "max": 14, "rate": 1, "rare_skill": "slow_immunity" }
-        },
-        "secondary": {
-          "none": { "rate": 80 },
-          "small": {
-            "rate": 18,
-            "stats": [
-              { "stat": "hp", "min": 10, "max": 20 }
-            ]
-          },
-          "medium": {
-            "rate": 2,
-            "stats": [
-              { "stat": "hp", "min": 25, "max": 30 }
-            ]
-          }
-        }
-      }
+      "secondary": { "$ref": "#/common_secondary/獣" }
+    },
+
+    "獣人": {
+      "$ref_species": "人間",
+      "$adjust": {
+        "right_leg": { "common_min": 9, "common_max": 14 },
+        "left_leg":  { "common_min": 9, "common_max": 14 },
+        "magic_skill": { "up": true }
+      },
+      "secondary": { "$ref": "#/common_secondary/獣人" }
+    },
+
+    "悪魔": {
+      "$ref_species": "人間",
+      "$adjust": {
+        "head": { "mp_up": true, "status_success_up": true },
+        "left_arm": { "mp_up": true, "magic_skill_up": true }
+      },
+      "secondary": { "$ref": "#/common_secondary/悪魔" }
+    },
+
+    "妖精": {
+      "$ref_species": "人間",
+      "$adjust": {
+        "right_leg": { "agi_up": true },
+        "left_leg":  { "agi_up": true },
+        "body": { "hp_down": true }
+      },
+      "secondary": { "$ref": "#/common_secondary/妖精" }
     },
 
     "不死": {
-      "bone_leg": {
-        "main_stat": "def",
-        "tiers": {
-          "common": { "min": 8, "max": 12, "rate": 95 },
-          "uncommon": { "min": 14, "max": 16, "rate": 4 },
-          "rare": { "min": 18, "max": 20, "rate": 1, "rare_skill": "stun_resist_up" }
-        },
-        "secondary": {
-          "none": { "rate": 80 },
-          "small": {
-            "rate": 18,
-            "stats": [
-              { "stat": "status_success", "min": 3, "max": 5 }
-            ]
-          },
-          "medium": {
-            "rate": 2,
-            "stats": [
-              { "stat": "status_success", "min": 8, "max": 10 }
-            ]
-          }
-        }
+      "$ref_species": "人間",
+      "$adjust": {
+        "body": { "hp_up": true, "def_up": true },
+        "head": { "status_resist_up": true }
       },
-      "bone_arm": {
-        "main_stat": "atk",
-        "tiers": {
-          "common": { "min": 6, "max": 10, "rate": 95 },
-          "uncommon": { "min": 12, "max": 15, "rate": 4 },
-          "rare": { "min": 18, "max": 20, "rate": 1, "rare_skill": "bone_throw" }
-        },
-        "secondary": {
-          "none": { "rate": 80 },
-          "small": {
-            "rate": 18,
-            "stats": [
-              { "stat": "def", "min": 3, "max": 5 }
-            ]
-          },
-          "medium": {
-            "rate": 2,
-            "stats": [
-              { "stat": "def", "min": 8, "max": 10 }
-            ]
-          }
-        }
-      }
+      "secondary": { "$ref": "#/common_secondary/不死" }
+    },
+
+    "竜": {
+      "$ref_species": "人間",
+      "$adjust": {
+        "body": { "hp_up": true },
+        "right_arm": { "atk_up": true }
+      },
+      "secondary": { "$ref": "#/common_secondary/竜" }
+    },
+
+    "神": {
+      "$ref_species": "人間",
+      "$adjust": {
+        "all": { "boost": true }
+      },
+      "secondary": { "$ref": "#/common_secondary/神" }
+    },
+
+    "機械": {
+      "$ref_species": "人間",
+      "$adjust": {
+        "body": { "hp_up": true, "def_up": true },
+        "right_arm": { "atk_up": true },
+        "legs": { "agi_down": true }
+      },
+      "secondary": { "$ref": "#/common_secondary/機械" }
     }
-  }
+  },
+
+  "common_secondary": {
+    "人間": {
+      "none": { "rate": 80 },
+      "small":  { "rate": 18, "stats": [
+        { "stat": "hp", "min": 10, "max": 20 },
+        { "stat": "def", "min": 3, "max": 5 },
+        { "stat": "atk", "min": 3, "max": 5 },
+        { "stat": "magic_skill", "min": 3, "max": 5 },
+        { "stat": "physical_skill", "min": 3, "max": 5 }
+      ]},
+      "medium": { "rate": 2, "stats": [
+        { "stat": "hp", "min": 25, "max": 35 },
+        { "stat": "def", "min": 8, "max": 10 },
+        { "stat": "atk", "min": 8, "max": 10 },
+        { "stat": "magic_skill", "min": 8, "max": 10 },
+        { "stat": "physical_skill", "min": 8, "max": 10 }
+      ]}
+    },
+
+    "獣": {
+      "none": { "rate": 80 },
+      "small":  { "rate": 18, "stats": [
+        { "stat": "agi", "min": 3, "max": 5 },
+        { "stat": "eva", "min": 3, "max": 5 },
+        { "stat": "atk", "min": 3, "max": 5 },
+        { "stat": "physical_skill", "min": 3, "max": 5 },
+        { "stat": "hit", "min": 1, "max": 2 }
+      ]},
+      "medium": { "rate": 2, "stats": [
+        { "stat": "agi", "min": 8, "max": 10 },
+        { "stat": "eva", "min": 8, "max": 10 },
+        { "stat": "atk", "min": 8, "max": 10 },
+        { "stat": "physical_skill", "min": 8, "max": 10 },
+        { "stat": "hit", "min": 3, "max": 4 }
+      ]}
+    },
+
+    "獣人": {
+      "none": { "rate": 80 },
+      "small":  { "rate": 18, "stats": [
+        { "stat": "agi", "min": 3, "max": 5 },
+        { "stat": "eva", "min": 3, "max": 5 },
+        { "stat": "magic_skill", "min": 3, "max": 5 },
+        { "stat": "magic_atk", "min": 3, "max": 5 },
+        { "stat": "hit", "min": 1, "max": 2 }
+      ]},
+      "medium": { "rate": 2, "stats": [
+        { "stat": "agi", "min": 8, "max": 10 },
+        { "stat": "eva", "min": 8, "max": 10 },
+        { "stat": "magic_skill", "min": 8, "max": 10 },
+        { "stat": "magic_atk", "min": 8, "max": 10 },
+        { "stat": "hit", "min": 3, "max": 4 }
+      ]}
+    },
+
+    "悪魔": {
+      "none": { "rate": 80 },
+      "small":  { "rate": 18, "stats": [
+        { "stat": "mp", "min": 10, "max": 20 },
+        { "stat": "magic_skill", "min": 3, "max": 5 },
+        { "stat": "status_success", "min": 3, "max": 5 },
+        { "stat": "status_resist", "min": 3, "max": 5 }
+      ]},
+      "medium": { "rate": 2, "stats": [
+        { "stat": "mp", "min": 25, "max": 35 },
+        { "stat": "magic_skill", "min": 8, "max": 10 },
+        { "stat": "status_success", "min": 8, "max": 10 },
+        { "stat": "status_resist", "min": 8, "max": 10 }
+      ]}
+    },
+
+    "妖精": {
+      "none": { "rate": 80 },
+      "small":  { "rate": 18, "stats": [
+        { "stat": "magic_skill", "min": 3, "max": 5 },
+        { "stat": "mp", "min": 10, "max": 20 },
+        { "stat": "status_success", "min": 3, "max": 5 },
+        { "stat": "agi", "min": 3, "max": 5 },
+        { "stat": "eva", "min": 3, "max": 5 }
+      ]},
+      "medium": { "rate": 2, "stats": [
+        { "stat": "magic_skill", "min": 8, "max": 10 },
+        { "stat": "mp", "min": 25, "max": 35 },
+        { "stat": "status_success", "min": 8, "max": 10 },
+        { "stat": "agi", "min": 8, "max": 10 },
+        { "stat": "eva", "min": 8, "max": 10 }
+      ]}
+    },
+
+    "不死": {
+      "none": { "rate": 80 },
+      "small":  { "rate": 18, "stats": [
+        { "stat": "mp", "min": 10, "max": 20 },
+        { "stat": "status_success", "min": 3, "max": 5 },
+        { "stat": "status_resist", "min": 3, "max": 5 }
+      ]},
+      "medium": { "rate": 2, "stats": [
+        { "stat": "mp", "min": 25, "max": 35 },
+        { "stat": "status_success", "min": 8, "max": 10 },
+        { "stat": "status_resist", "min": 8, "max": 10 }
+      ]}
+    },
+
+    "竜": {
+      "none": { "rate": 80 },
+      "small":  { "rate": 18, "stats": [
+        { "stat": "hp", "min": 20, "max": 30 },
+        { "stat": "atk", "min": 5, "max": 7 },
+        { "stat": "physical_skill", "min": 5, "max": 7 }
+      ]},
+      "medium": { "rate": 2, "stats": [
+        { "stat": "hp", "min": 40, "max": 60 },
+        { "stat": "atk", "min": 10, "max": 12 },
+        { "stat": "physical_skill", "min": 10, "max": 12 }
+      ]}
+    },
+
+    "神": {
+      "none": { "rate": 80 },
+      "small":  { "rate": 18, "stats": [
+        { "stat": "atk", "min": 5, "max": 7 },
+        { "stat": "def", "min": 5, "max": 7 },
+        { "stat": "status_resist", "min": 5, "max": 7 },
+        { "stat": "status_success", "min": 5, "max": 7 },
+        { "stat": "crit", "min": 2, "max": 3 }
+      ]},
+      "medium": { "rate": 2, "stats": [
+        { "stat": "atk", "min": 12, "max": 15 },
+        { "stat": "def", "min": 12, "max": 15 },
+        { "stat": "status_resist", "min": 12, "max": 15 },
+        { "stat": "status_success", "min": 12, "max": 15 },
+        { "stat": "crit", "min": 5, "max": 6 }
+      ]}
+    },
+
+"機械": {
+  "none": { "rate": 80 },
+  "small":  { "rate": 18, "stats": [
+    { "stat": "hp", "min": 20, "max": 30 },
+    { "stat": "def", "min": 5, "max": 7 },
+    { "stat": "atk", "min": 5, "max": 7 },
+    { "stat": "physical_skill", "min": 5, "max": 7 },
+    { "stat": "status_resist", "min": 5, "max": 7 },
+    { "stat": "crit", "min": 2, "max": 3 }
+  ]},
+  "medium": { "rate": 2, "stats": [
+    { "stat": "hp", "min": 40, "max": 60 },
+    { "stat": "def", "min": 12, "max": 15 },
+    { "stat": "atk", "min": 12, "max": 15 },
+    { "stat": "physical_skill", "min": 12, "max": 15 },
+    { "stat": "status_resist", "min": 12, "max": 15 },
+    { "stat": "crit", "min": 5, "max": 6 }
+  ]}
 }
