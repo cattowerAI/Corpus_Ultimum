@@ -1,0 +1,171 @@
+﻿{
+  "機械": {
+    "head": {
+      "main_stat_candidates": ["mp", "status_success", "status_resist"],
+      "tiers": {
+        "common":   { "min": 3,  "max": 6,  "rate": 95 },
+        "uncommon": { "min": 8,  "max": 10, "rate": 4 },
+        "rare":     { "min": 12, "max": 14, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "hp", "min": 20, "max": 30 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "physical_skill", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "hp", "min": 40, "max": 60 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "physical_skill", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "right_arm": {
+      "main_stat_candidates": ["atk", "physical_skill", "hit", "crit"],
+      "tiers": {
+        "common":   { "min": 10, "max": 16, "rate": 95 },
+        "uncommon": { "min": 20, "max": 24, "rate": 4 },
+        "rare":     { "min": 30, "max": 36, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "hp", "min": 20, "max": 30 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "physical_skill", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "hp", "min": 40, "max": 60 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "physical_skill", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "left_arm": {
+      "main_stat_candidates": ["magic_skill", "mp"],
+      "tiers": {
+        "common":   { "min": 3,  "max": 6,  "rate": 95 },
+        "uncommon": { "min": 8,  "max": 10, "rate": 4 },
+        "rare":     { "min": 12, "max": 14, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "hp", "min": 20, "max": 30 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "physical_skill", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "hp", "min": 40, "max": 60 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "physical_skill", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "body": {
+      "main_stat_candidates": ["hp", "def"],
+      "tiers": {
+        "common":   { "min": 35, "max": 55, "rate": 95 },
+        "uncommon": { "min": 60, "max": 75, "rate": 4 },
+        "rare":     { "min": 90, "max": 110, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "hp", "min": 20, "max": 30 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "physical_skill", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "hp", "min": 40, "max": 60 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "physical_skill", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "right_leg": {
+      "main_stat_candidates": ["agi", "eva"],
+      "tiers": {
+        "common":   { "min": 2,  "max": 5,  "rate": 95 },
+        "uncommon": { "min": 6,  "max": 8,  "rate": 4 },
+        "rare":     { "min": 10, "max": 12, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "hp", "min": 20, "max": 30 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "physical_skill", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "hp", "min": 40, "max": 60 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "physical_skill", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "left_leg": {
+      "main_stat_candidates": ["agi", "eva"],
+      "tiers": {
+        "common":   { "min": 2,  "max": 5,  "rate": 95 },
+        "uncommon": { "min": 6,  "max": 8,  "rate": 4 },
+        "rare":     { "min": 10, "max": 12, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "hp", "min": 20, "max": 30 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "physical_skill", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "hp", "min": 40, "max": 60 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "physical_skill", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    }
+  }
+}

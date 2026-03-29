@@ -1,0 +1,159 @@
+﻿{
+  "妖精": {
+    "head": {
+      "main_stat_candidates": ["mp", "status_success", "status_resist"],
+      "tiers": {
+        "common":   { "min": 7,  "max": 12, "rate": 95 },
+        "uncommon": { "min": 15, "max": 18, "rate": 4 },
+        "rare":     { "min": 22, "max": 26, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "magic_skill", "min": 3, "max": 5 },
+          { "stat": "mp", "min": 10, "max": 20 },
+          { "stat": "status_success", "min": 3, "max": 5 },
+          { "stat": "agi", "min": 3, "max": 5 },
+          { "stat": "eva", "min": 3, "max": 5 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "magic_skill", "min": 8, "max": 10 },
+          { "stat": "mp", "min": 25, "max": 35 },
+          { "stat": "status_success", "min": 8, "max": 10 },
+          { "stat": "agi", "min": 8, "max": 10 },
+          { "stat": "eva", "min": 8, "max": 10 }
+        ]}
+      }
+    },
+
+    "right_arm": {
+      "main_stat_candidates": ["atk", "physical_skill", "hit", "crit"],
+      "tiers": {
+        "common":   { "min": 4,  "max": 8,  "rate": 95 },
+        "uncommon": { "min": 10, "max": 13, "rate": 4 },
+        "rare":     { "min": 16, "max": 18, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "magic_skill", "min": 3, "max": 5 },
+          { "stat": "mp", "min": 10, "max": 20 },
+          { "stat": "status_success", "min": 3, "max": 5 },
+          { "stat": "agi", "min": 3, "max": 5 },
+          { "stat": "eva", "min": 3, "max": 5 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "magic_skill", "min": 8, "max": 10 },
+          { "stat": "mp", "min": 25, "max": 35 },
+          { "stat": "status_success", "min": 8, "max": 10 },
+          { "stat": "agi", "min": 8, "max": 10 },
+          { "stat": "eva", "min": 8, "max": 10 }
+        ]}
+      }
+    },
+
+    "left_arm": {
+      "main_stat_candidates": ["magic_skill", "mp"],
+      "tiers": {
+        "common":   { "min": 7,  "max": 12, "rate": 95 },
+        "uncommon": { "min": 15, "max": 18, "rate": 4 },
+        "rare":     { "min": 22, "max": 26, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "magic_skill", "min": 3, "max": 5 },
+          { "stat": "mp", "min": 10, "max": 20 },
+          { "stat": "status_success", "min": 3, "max": 5 },
+          { "stat": "agi", "min": 3, "max": 5 },
+          { "stat": "eva", "min": 3, "max": 5 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "magic_skill", "min": 8, "max": 10 },
+          { "stat": "mp", "min": 25, "max": 35 },
+          { "stat": "status_success", "min": 8, "max": 10 },
+          { "stat": "agi", "min": 8, "max": 10 },
+          { "stat": "eva", "min": 8, "max": 10 }
+        ]}
+      }
+    },
+
+    "body": {
+      "main_stat_candidates": ["hp", "def"],
+      "tiers": {
+        "common":   { "min": 12, "max": 20, "rate": 95 },
+        "uncommon": { "min": 25, "max": 30, "rate": 4 },
+        "rare":     { "min": 38, "max": 42, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "magic_skill", "min": 3, "max": 5 },
+          { "stat": "mp", "min": 10, "max": 20 },
+          { "stat": "status_success", "min": 3, "max": 5 },
+          { "stat": "agi", "min": 3, "max": 5 },
+          { "stat": "eva", "min": 3, "max": 5 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "magic_skill", "min": 8, "max": 10 },
+          { "stat": "mp", "min": 25, "max": 35 },
+          { "stat": "status_success", "min": 8, "max": 10 },
+          { "stat": "agi", "min": 8, "max": 10 },
+          { "stat": "eva", "min": 8, "max": 10 }
+        ]}
+      }
+    },
+
+    "right_leg": {
+      "main_stat_candidates": ["agi", "eva"],
+      "tiers": {
+        "common":   { "min": 10, "max": 16, "rate": 95 },
+        "uncommon": { "min": 20, "max": 24, "rate": 4 },
+        "rare":     { "min": 30, "max": 34, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "magic_skill", "min": 3, "max": 5 },
+          { "stat": "mp", "min": 10, "max": 20 },
+          { "stat": "status_success", "min": 3, "max": 5 },
+          { "stat": "agi", "min": 3, "max": 5 },
+          { "stat": "eva", "min": 3, "max": 5 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "magic_skill", "min": 8, "max": 10 },
+          { "stat": "mp", "min": 25, "max": 35 },
+          { "stat": "status_success", "min": 8, "max": 10 },
+          { "stat": "agi", "min": 8, "max": 10 },
+          { "stat": "eva", "min": 8, "max": 10 }
+        ]}
+      }
+    },
+
+    "left_leg": {
+      "main_stat_candidates": ["agi", "eva"],
+      "tiers": {
+        "common":   { "min": 10, "max": 16, "rate": 95 },
+        "uncommon": { "min": 20, "max": 24, "rate": 4 },
+        "rare":     { "min": 30, "max": 34, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "magic_skill", "min": 3, "max": 5 },
+          { "stat": "mp", "min": 10, "max": 20 },
+          { "stat": "status_success", "min": 3, "max": 5 },
+          { "stat": "agi", "min": 3, "max": 5 },
+          { "stat": "eva", "min": 3, "max": 5 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "magic_skill", "min": 8, "max": 10 },
+          { "stat": "mp", "min": 25, "max": 35 },
+          { "stat": "status_success", "min": 8, "max": 10 },
+          { "stat": "agi", "min": 8, "max": 10 },
+          { "stat": "eva", "min": 8, "max": 10 }
+        ]}
+      }
+    }
+  }
+}

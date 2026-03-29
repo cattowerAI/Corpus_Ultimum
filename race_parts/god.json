@@ -1,0 +1,159 @@
+﻿{
+  "神": {
+    "head": {
+      "main_stat_candidates": ["mp", "status_success", "status_resist"],
+      "tiers": {
+        "common":   { "min": 10, "max": 16, "rate": 95 },
+        "uncommon": { "min": 20, "max": 26, "rate": 4 },
+        "rare":     { "min": 30, "max": 36, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "status_success", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "status_success", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "right_arm": {
+      "main_stat_candidates": ["atk", "physical_skill", "hit", "crit"],
+      "tiers": {
+        "common":   { "min": 12, "max": 20, "rate": 95 },
+        "uncommon": { "min": 24, "max": 30, "rate": 4 },
+        "rare":     { "min": 36, "max": 42, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "status_success", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "status_success", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "left_arm": {
+      "main_stat_candidates": ["magic_skill", "mp"],
+      "tiers": {
+        "common":   { "min": 10, "max": 16, "rate": 95 },
+        "uncommon": { "min": 20, "max": 26, "rate": 4 },
+        "rare":     { "min": 30, "max": 36, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "status_success", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "status_success", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "body": {
+      "main_stat_candidates": ["hp", "def"],
+      "tiers": {
+        "common":   { "min": 40, "max": 60, "rate": 95 },
+        "uncommon": { "min": 70, "max": 90, "rate": 4 },
+        "rare":     { "min": 110, "max": 130, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "status_success", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "status_success", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "right_leg": {
+      "main_stat_candidates": ["agi", "eva"],
+      "tiers": {
+        "common":   { "min": 8,  "max": 14, "rate": 95 },
+        "uncommon": { "min": 18, "max": 22, "rate": 4 },
+        "rare":     { "min": 28, "max": 32, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "status_success", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "status_success", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    },
+
+    "left_leg": {
+      "main_stat_candidates": ["agi", "eva"],
+      "tiers": {
+        "common":   { "min": 8,  "max": 14, "rate": 95 },
+        "uncommon": { "min": 18, "max": 22, "rate": 4 },
+        "rare":     { "min": 28, "max": 32, "rate": 1 }
+      },
+      "secondary": {
+        "none": { "rate": 80 },
+        "small": { "rate": 18, "stats": [
+          { "stat": "atk", "min": 5, "max": 7 },
+          { "stat": "def", "min": 5, "max": 7 },
+          { "stat": "status_resist", "min": 5, "max": 7 },
+          { "stat": "status_success", "min": 5, "max": 7 },
+          { "stat": "crit", "min": 2, "max": 3 }
+        ]},
+        "medium": { "rate": 2, "stats": [
+          { "stat": "atk", "min": 12, "max": 15 },
+          { "stat": "def", "min": 12, "max": 15 },
+          { "stat": "status_resist", "min": 12, "max": 15 },
+          { "stat": "status_success", "min": 12, "max": 15 },
+          { "stat": "crit", "min": 5, "max": 6 }
+        ]}
+      }
+    }
+  }
+}
