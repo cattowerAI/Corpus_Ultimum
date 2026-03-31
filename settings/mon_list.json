@@ -4,7 +4,7 @@
       {
         "id": "slime_1",
         "name": "スライム",
-        "attribute": "slime",
+        "attribute": "devil",
         "level": 1,
         "stats": {
           "hp": 30,
@@ -21,8 +21,12 @@
         ],
         "exp": 10,
         "drops": [
-          { "part_id": "slime_gel", "rate": 50 },
-          { "part_id": "slime_body", "rate": 20 }
+          { "part_id": "頭", "rate": 20 },
+          { "part_id": "胴体", "rate": 20 },
+          { "part_id": "右腕", "rate": 20 },
+          { "part_id": "左腕", "rate": 20 },
+          { "part_id": "右足", "rate": 20 },
+          { "part_id": "左足", "rate": 20 }
         ]
       },
       {
@@ -45,7 +49,12 @@
         ],
         "exp": 12,
         "drops": [
-          { "part_id": "右足", "rate": 20 }
+          { "part_id": "頭", "rate": 20 },
+          { "part_id": "胴体", "rate": 20 },
+          { "part_id": "右腕", "rate": 20 },
+          { "part_id": "左腕", "rate": 20 },
+          { "part_id": "右足", "rate": 20 },
+          { "part_id": "左足", "rate": 20 }
         ]
       }
     ],
@@ -71,7 +80,12 @@
         ],
         "exp": 18,
         "drops": [
-          { "part_id": "頭", "rate": 25 }
+          { "part_id": "頭", "rate": 20 },
+          { "part_id": "胴体", "rate": 20 },
+          { "part_id": "右腕", "rate": 20 },
+          { "part_id": "左腕", "rate": 20 },
+          { "part_id": "右足", "rate": 20 },
+          { "part_id": "左足", "rate": 20 }
         ]
       },
       {
@@ -95,8 +109,12 @@
         ],
         "exp": 20,
         "drops": [
-          { "part_id": "胴体", "rate": 35 },
-          { "part_id": "左腕", "rate": 35 }
+          { "part_id": "頭", "rate": 20 },
+          { "part_id": "胴体", "rate": 20 },
+          { "part_id": "右腕", "rate": 20 },
+          { "part_id": "左腕", "rate": 20 },
+          { "part_id": "右足", "rate": 20 },
+          { "part_id": "左足", "rate": 20 }
         ]
       }
     ],
@@ -121,8 +139,12 @@
         ],
         "exp": 18,
         "drops": [
-          { "part_id": "bone_arm", "rate": 40 },
-          { "part_id": "bone_leg", "rate": 25 }
+          { "part_id": "頭", "rate": 20 },
+          { "part_id": "胴体", "rate": 20 },
+          { "part_id": "右腕", "rate": 20 },
+          { "part_id": "左腕", "rate": 20 },
+          { "part_id": "右足", "rate": 20 },
+          { "part_id": "左足", "rate": 20 }
         ]
       },
       {
@@ -145,8 +167,12 @@
         ],
         "exp": 25,
         "drops": [
-          { "part_id": "wolf_fang", "rate": 40 },
-          { "part_id": "wolf_leg", "rate": 30 }
+          { "part_id": "頭", "rate": 20 },
+          { "part_id": "胴体", "rate": 20 },
+          { "part_id": "右腕", "rate": 20 },
+          { "part_id": "左腕", "rate": 20 },
+          { "part_id": "右足", "rate": 20 },
+          { "part_id": "左足", "rate": 20 }
         ]
       }
     ]
